@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import Info from "./components/infogen"
+
+import "bulma/css/bulma.css";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>Please work</h1>
       </header>
+      <Info showID="62715"/>
+      <Info showID="61709"/>
+      <Info showID="12697"/>
+      <Info showID="12971"/>
+      <Info showID="12609"/>
     </div>
   );
 }
+
 
 export default App;
