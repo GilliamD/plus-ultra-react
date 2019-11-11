@@ -36,3 +36,43 @@ class Info extends Component {
 }
 
 export default Info;
+/*
+import React, { Component } from "react";
+import { loadData } from "../utilities/loaddata";
+
+class Info extends Component {
+    state = {
+        info: []
+    };
+
+    async componentDidMount() {
+
+        this.getTale();
+    }
+
+    getTale = async () => {
+        let info = await loadData(
+            `https://api.themoviedb.org/3/tv/62715?api_key=cc42102845a020075536de832b824222`
+        );
+        info = Object.keys(info);    
+        this.setState({
+            info //returns an array of 28 objects
+        });
+    };
+
+    render() {
+        const { info } = this.state;
+        return (
+        <ul>
+            { info.map((text, id) => {
+                return (
+                    <li key={`text-${id}`}>{text}</li>
+                )}
+        )
+    }
+    </ul>
+);
+}
+}
+
+export default Info;*/
